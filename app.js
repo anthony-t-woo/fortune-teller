@@ -16,7 +16,9 @@ submitBtn.addEventListener('click', () => {
     answerP.textContent = randomResponse;
 });
 
-resetBtn.addEventListener('click', () => {});
+resetBtn.addEventListener('click', () => {
+    toggleSections();
+});
 
 // declare functions
 function toggleSections() {
