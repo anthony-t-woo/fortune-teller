@@ -5,7 +5,7 @@ const submitBtn = document.getElementById('submit-button');
 const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
 const answerP = document.getElementById('answer');
-const resetBtn = document.getElementById('reset=button');
+const resetBtn = document.getElementById('reset-button');
 /* State */
 
 /* Events */
@@ -15,6 +15,15 @@ submitBtn.addEventListener('click', () => {
     const randomResponse = answers[randomInt];
     answerP.textContent = randomResponse;
 });
+
+resetBtn.addEventListener('click', () => {});
+
+// declare functions
+function toggleSections() {
+    promptSection.classList.toggle('hide');
+    fortuneSection.classList.toggle('hide');
+}
+// Array for answers list
 const answers = [
     'Yes, definitely',
     'It is certain',
@@ -36,7 +45,7 @@ const answers = [
     'Outlook not so good',
     'Very doubtful',
 ];
-/* Array for answers list */
+
 /* Display Functions */
 
 // (don't forget to call any display functions you want to run on page load!)
