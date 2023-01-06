@@ -31,9 +31,19 @@ header .logo {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    background-image: url(../assets/hooded-guy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hide {
     display: none;
+}
+
+.ball-image {
+    width: 300px;
 }
