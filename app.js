@@ -6,7 +6,8 @@ const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
 const answerP = document.getElementById('answer');
 const resetBtn = document.getElementById('reset-button');
-const btnAudio = new Audio('/assets/dream-sound.mp3');
+const submitBtnAudio = new Audio('/assets/dream-sound.mp3');
+const resetBtnAudio = new Audio('/assets/quake-sound.mp3');
 /* State */
 
 /* Events */
@@ -15,11 +16,12 @@ submitBtn.addEventListener('click', () => {
     const randomInt = Math.floor(Math.random() * answers.length);
     const randomResponse = answers[randomInt];
     answerP.textContent = randomResponse;
-    btnAudio.play();
+    submitBtnAudio.play();
 });
 
 resetBtn.addEventListener('click', () => {
     toggleSections();
+    resetBtnAudio.play('3s');
 });
 
 // declare functions
