@@ -8,6 +8,7 @@ const answerP = document.getElementById('answer');
 const resetBtn = document.getElementById('reset-button');
 const submitBtnAudio = new Audio('/assets/dream-sound.mp3');
 const resetBtnAudio = new Audio('/assets/quake-sound.mp3');
+const askedQuestion = document.getElementById('question');
 /* State */
 
 /* Events */
@@ -21,7 +22,8 @@ submitBtn.addEventListener('click', () => {
 
 resetBtn.addEventListener('click', () => {
     toggleSections();
-    resetBtnAudio.play('3s');
+    resetBtnAudio.play();
+    askedQuestion.value = '';
 });
 
 // declare functions
