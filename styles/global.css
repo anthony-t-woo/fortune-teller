@@ -31,5 +31,43 @@ header .logo {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    background-image: url(../assets/hooded-guy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Rajdhani', sans-serif;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+
+.ball-image {
+    width: 300px;
+    opacity: 70%;
+}
+
+p {
+    font-size: 3rem;
+}
+
+.prompt-wrapper,
+.fortune-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    padding: 5px;
+    margin: 15px;
+    background-image: url(../assets/laser.jpg);
+    background-position: center;
+    color: whitesmoke;
+    font-weight: 600;
 }
