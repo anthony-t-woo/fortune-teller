@@ -15,7 +15,12 @@
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
-
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+            rel="stylesheet"
+        />
         <!-- css -->
         <link rel="stylesheet" href="styles/reset.css" />
         <link rel="stylesheet" href="styles/global.css" />
@@ -26,18 +31,27 @@
         <header>
             <img class="logo" src="assets/html_css_js.png" alt="logo" />
             <h1>Magic 8 Ball</h1>
+            <audio controls autoplay muted>
+                <source src="./assets/trippy-song.mp3" type="audio/mp3" />
+
+                Your browser does not support the audio element.
+            </audio>
         </header>
 
         <main>
             <section class="prompt" id="prompt">
-                <p>Ask me a question and I will tell you your fortune...</p>
-                <input type="text" placeholder="ask me anything" />
-                <button class="button" id="submit-button">See into the future!</button>
+                <div class="prompt-wrapper">
+                    <p>Ask me a question and I will tell you your fortune...</p>
+                    <input type="text" placeholder="ask me anything" />
+                    <button class="button" id="submit-button">See into the future!</button>
+                </div>
             </section>
             <section class="fortune hide" id="fortune">
-                <img class="ball-image" src="./assets/8ball.png" alt="image of an 8 ball" />
-                <p class="answer" id="answer"></p>
-                <button class="button" id="reset-button">Let's try that again</button>
+                <div class="fortune-wrapper">
+                    <img class="ball-image" src="./assets/8ball.png" alt="image of an 8 ball" />
+                    <p class="answer" id="answer"></p>
+                    <button class="button" id="reset-button">Let's try that again</button>
+                </div>
             </section>
         </main>
     </body>
